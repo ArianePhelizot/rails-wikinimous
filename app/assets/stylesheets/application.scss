@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  color: #23527C;
+  font-family: font-family: 'Roboto Slab', serif;
+}
+
+#navbar {
+  background-color: #F8F8F8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  font-size: 15px;
+}
+
