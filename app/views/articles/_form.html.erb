@@ -1,10 +1,14 @@
-<%= simple_form_for(@restaurant) do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
-  <%= f.label :content %>
-  <%= f.text_field :content %>
-  <%= f.submit %>
-<% end %>
-
+<div class="container text-center">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <%= simple_form_for(@article) do |f| %>
+        <%= f.input :title, placeholder: "a compelling catch phrase" %>
+        <%= f.input :content, placeholder: "your best text ever" %>
+        <!-- <%= f.submit %> -->
+        <%= f.button :submit %>
+      <% end %>
+    </div>
+  </div>
+</div>
 
 <!-- voir doc de simple_form -->

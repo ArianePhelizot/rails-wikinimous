@@ -1,2 +1,12 @@
-<h2><%= @article.title %></h2>
-<p><%= @article.content %></p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <h2><%= @article.title %></h2>
+      <p><%= @article.content %></p>
+      <div class = "text-center list-inline">
+        <%= link_to "Edit", edit_article_path(@article) %>
+        <%= link_to "Delete", article_path(@article), method: :delete, data: { confirm: "Are you sure?" } %>
+      </div>
+    </div>
+  </div>
+</div>
